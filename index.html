@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Gym League Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Gym League Calculator</h1>
+    <h2>Description</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Duration</th>
+            <th>Price ($)</th>
+            <th>Benefit</th>
+        </tr>
+        <tr>
+            <td>Chocolate Bar</td>
+            <td>1m</td>
+            <td>50</td>
+            <td>Muscle Boost: +15%<br> Stamina Regen: +15%</td>
+        </tr>
+        <tr>
+            <td>Chips</td>
+            <td>1m 30s</td>
+            <td>90</td>
+            <td>Muscle Boost: +25%</td>
+        </tr>
+        <tr>
+            <td>Chicken Wings</td>
+            <td>2m</td>
+            <td>112</td>
+            <td>Muscle Boost: +35%</td>
+        </tr>
+        <tr>
+            <td>Master Drink</td>
+            <td>2m</td>
+            <td>127</td>
+            <td>Stamina Regen: +30%<br> Speed Boost: +10%</td>
+        </tr>
+        <tr>
+            <td>Protein bar</td>
+            <td>3m</td>
+            <td>150</td>
+            <td>Muscle Boost: +35%</td>
+        </tr>
+        <tr>
+            <td>Cheap protein powder</td>
+            <td>5m</td>
+            <td>180</td>
+            <td>Pump: +10%<br> Muscle Boost: +40%<br> Chance: +5%</td>
+        </tr>
+        <tr>
+            <td>Steak</td>
+            <td>4m</td>
+            <td>210</td>
+            <td>Muscle Boost: +50%</td>
+        </tr>
+        <tr>
+            <td>Rorate</td>
+            <td>4m</td>
+            <td>525</td>
+            <td>Stamina Regen: +50%<br> Speed Boost: +20%</td>
+        </tr>
+        <tr>
+            <td>Protein shake</td>
+            <td>5m</td>
+            <td>750</td>
+            <td>Muscle Boost: +30%</td>
+        </tr>
+        <tr>
+            <td>Protein powder</td>
+            <td>10m</td>
+            <td>1 500</td>
+            <td>Pump: +20%<br> Muscle Boost: +70%</td>
+        </tr>
+        <tr>
+            <td>Creatine</td>
+            <td>15m</td>
+            <td>5 250</td>
+            <td>Pump: +50%<br> Muscle Boost: +100%</td>
+        </tr>
+        <tr>
+            <td>Small Power Potion</td>
+            <td>15m</td>
+            <td>15 000</td>
+            <td>Muscle Boost: +75%</td>
+        </tr>
+        <tr>
+            <td>Small Pump Potion</td>
+            <td>15m</td>
+            <td>15 000</td>
+            <td>Pump: +50%</td>
+        </tr>
+        <tr>
+            <td>Small Speed Potion</td>
+            <td>15m</td>
+            <td>15 000</td>
+            <td>Speed: +25%</td>
+        </tr>
+        <tr>
+            <td>Secret Beans</td>
+            <td>10m</td>
+            <td>18 750</td>
+            <td>Muscle Boost: +75%<br> Stamina Regen: +75%</td>
+        </tr>
+        <tr>
+            <td>Angel potion</td>
+            <td>20m</td>
+            <td>75 000</td>
+            <td>Speed Boost: +75%</td>
+        </tr>
+    </table>
+    <h2>Training Time </h2>
+    <form id="timeForm">
+        <label for="trainingTime">Training time (in hours, min. 1hour): </label>
+        <input type="number" id="trainingTime" name="trainingTime" min="1">
+        <button type="button" onclick="calculateByTime()">Calculate</button>
+    </form>
+    <div id="timeResults"></div>
+    <br><br>
+    <div style="margin-left: 50%;"><footer>&copy; Made by JormuFer</footer></div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
