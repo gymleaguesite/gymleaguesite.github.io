@@ -14,7 +14,8 @@ const powerUps = [
     { name: 'Small Pump Potion', duration: 15, cost: 15000 },
     { name: 'Secret Beans', duration: 10, cost: 18750 },
     { name: 'Angel potion', duration: 20, cost: 75000 },
-    { name: 'Small Speed Potion', duration: 15, cost: 15000 }
+    { name: 'Small Speed Potion', duration: 15, cost: 15000 },
+    { name: 'Divine Fruit', duration: 10, cost: 217000 }
 ];
 
 document.getElementById('selectAll').addEventListener('change', function() {
