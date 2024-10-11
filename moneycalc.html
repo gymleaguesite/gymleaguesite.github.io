@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Gym League Calculator</title>
+    <link rel="stylesheet" href="powerstyle.css">
+</head>
+<body>
+    <h1>Welcome to Gym League Calculator</h1>
+    <h2>Description</h2><p id="p1c"><a href="index.html">back</a></p>
+    <div class="table-container">
+        <table border="1">
+            <tr>
+              <td>Cheap Body Oil</td>
+              <td>3m</td>
+              <td>525</td>
+              <td>Cash Boost: +15%<br> Better Pose: +10%</td>
+            </tr>
+            <tr>
+              <td>Shiny Oil</td>
+              <td>5m</td>
+              <td>1 000</td>
+              <td>Cash Boost: +30%<br> Better Pose: +15%</td>
+            </tr>
+            <tr>
+              <td>Premium Body Oil</td>
+              <td>15m</td>
+              <td>3 750</td>
+              <td>Cash Boost: +50%<br> Better Pose: +20%</td>
+            </tr>
+            <tr>
+              <td>Small Money Potion</td>
+              <td>15m</td>
+              <td>15 000</td>
+              <td>Cash Boost: 50%</td>
+            </tr>
+            <tr>
+              <td>Cash Fruit</td>
+              <td>10m</td>
+              <td>135 000</td>
+              <td>Cash Boost: +75%</td>
+            </tr>
+            <tr>
+              <td>Toning Fruit</td>
+              <td>10m</td>
+              <td>172 000</td>
+              <td>Better Pose: +35%</td>
+            </tr>
+            <tr>
+              <td>Ramen</td>
+              <td>10m</td>
+              <td>262 000</td>
+              <td>Cash Boost: +75%<br> Better Pose: +50%</td>
+            </tr>
+        </table>
+    </div>
+    <h2>Training Time</h2>
+    <form id="timeForm">
+        <label for="trainingTime">Training time (in hours): </label>
+        <input type="number" id="trainingTime" name="trainingTime" min="1">
+        
+        <fieldset>
+            <legend>Choose Power-Ups:</legend>
+            <label><input type="checkbox" id="selectAll"> Select All</label><br>
+            <label><input type="checkbox" value="Cheap Body Oil"> Cheap Body Oil</label><br>
+            <label><input type="checkbox" value="Shiny Oil"> Shiny Oil</label><br>
+            <label><input type="checkbox" value="Premium Body Oil"> Premium Body Oil</label><br>
+            <label><input type="checkbox" value="Small Money Potion"> Small Money Potion</label><br>
+            <label><input type="checkbox" value="Cash Fruit"> Cash Fruit</label><br>
+            <label><input type="checkbox" value="Toning Fruit"> Toning Fruit</label><br>
+            <label><input type="checkbox" value="Ramen"> Ramen</label><br>
+        </fieldset>
+
+        <button type="button" onclick="calculateByTime()">Calculate</button>
+    </form>
+    <div id="timeResults"></div>
+
+    <footer>&copy; Made by JormuFer</footer>
+    <script src="moneyscript.js"></script>
+</body>
+</html>
